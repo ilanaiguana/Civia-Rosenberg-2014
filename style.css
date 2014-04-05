@@ -1,0 +1,109 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+body {
+    
+    margin: 10px;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+
+    color: #613C16;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #613C16;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+/** start style **/
+
+header {
+
+  position:relative;
+  max-width:900px;
+  margin:auto;
+}
+
+header nav {
+
+    background:#f0f0f0;
+    height:50px;
+
+}
+
+header ul {
+
+  height:30px;
+
+}
+
+header li {
+
+    float:right;
+    margin-top:10px;
+    width:180px;
+
+}
+
+.wrapper {
+
+ 
+    padding: 10px;
+    margin: auto 0px;
+
+}
+
+
+footer li {
+
+  float:left;
+  width:180px;
+  text-align:center; 
+ 
+
+}
+
+
+footer {
+
+  border-top: 1px solid;
+
+  max-width:900px;
+  margin:auto;
+  padding:10px 0;
+  text-decoration:none;
+
+}
+
+
+
+
