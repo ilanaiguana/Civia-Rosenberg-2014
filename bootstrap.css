@@ -3523,6 +3523,8 @@ input[type="button"].btn-block {
   outline: 0;
 }
 
+/** ** ** ** dropdown menu  ** ** ** **/
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -4821,7 +4823,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -4913,7 +4915,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-link {
-  color: #999999;
+  color: #000000;
 }
 
 .navbar-inverse .navbar-link:hover {
