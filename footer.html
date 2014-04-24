@@ -59,7 +59,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drawings <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#drawing.html">Ink on paper 2010</a></li>
+                  <li><a href="#inkdrawing.html" title="Drawing title 2010">Ink on paper 2010
+                      </a></li>
+
                   <li><a href="#">India Ink on paper 2012</a></li>
                   <li class="divider"></li>
 
@@ -89,8 +91,12 @@
         <script src="bootstrap.min.js"></script>
         <script src="holder.js"></script>
 
-        <script src="visuallightbox.js"></script>
-        <script src="vlbdata1.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('a').nivoLightbox();
+            });
+        </script>
+
         <script src="conversion.js"></script>
 
     </body>

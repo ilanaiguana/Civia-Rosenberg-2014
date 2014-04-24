@@ -4815,10 +4815,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #333333;
 }
 
-/* top nav background   */
+/* * * * * * * * * * *  top nav background  * * * * * * * * * * */
 
 .navbar-inverse {
-  background-color: #800000;
+  background-color: #660000;
   border-color: #080808;
 }
 
@@ -4832,12 +4832,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
+/* * * * * * * * * * *  top nav text color  * * * * * * * * * * */
+
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #A0A0A0;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
