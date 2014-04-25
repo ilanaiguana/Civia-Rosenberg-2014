@@ -17,6 +17,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.css" rel="stylesheet">
+    <!-- lightbox-->
+    <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -52,7 +54,7 @@
           <div id="content-wrapper">
                 <section class="jcarousel">
                     <ul>
-                        <li><a href="2014-12-13L.jpg" title="title of piece">
+                        <li><a href="inkdrawing-8L.jpg" title="title of piece">
                         <img src="2014-12-13-long.jpg" alt="Long-Images-12 and 13"></a>
                         </li>
 
@@ -72,7 +74,7 @@
                         <img src="2014-1m.jpg" alt="Image-1"></a>
                         </li>
 
-                        <li><a class="vlightbox1" href="recent-1229.jpg">
+                        <li><a>
                         <img src="2014-14m.jpg" alt="Image-12"></a>
                         </li>
 
@@ -128,9 +130,14 @@
         <script src="bootstrap.min.js"></script>
         <script src="holder.js"></script>
 
-        <script src="visuallightbox.js"></script>
-        <script src="vlbdata1.js"></script>
         <script src="conversion.js"></script>
+
+
+         <script>
+            $(document).ready(function(){
+              $('a').nivoLightbox();
+            });
+        </script>
 
     </body>
 </html>
