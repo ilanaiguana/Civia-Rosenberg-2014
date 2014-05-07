@@ -8,6 +8,8 @@
     <meta name="author" content="ilana-rosenberg">
     <link rel="shortcut icon" href="favicon.png">
 
+    <title>Civia Rosenberg</title>
+
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -33,42 +35,54 @@
 
     <!-- Wrap all page content here -->
         <div id="wrap">
-      <header>
-
-              <div class="page-header">
-        <h1>Civia Rosenberg</h1>
-      </div>
 
 
-            
+        <header>
+
+            <nav><!-- top-nav -->
+
+            <iframe src="top-nav.html" target=".../#" frameborder="0" width="100%" height="250px"></iframe></nav><!-- end top-nav -->
+
+  
         </header>
 
 
-            <main class="jcarousel-wrapper">
+          <main class="jcarousel-wrapper">
 
-          <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
 
           <div id="content-wrapper">
                 <section class="jcarousel">
                     <ul>
-                        <li><a>
-                        <img src="2014-12-13-long.jpg" alt="Long-Images-12 and 13"></a>
+                        <li><a href="large-image.jpg" title="Folio 1, 2010. Ink on paper.">
+                        <img src="2014-12-13-long.jpg" alt="Long-Images-12 and 13" title="title"></a>  
+                        <div id="htmlcaption" class="nivo-html-caption"><br>
+                        Title, date. Size. <a href="#">Work on Paper</a></div>
                         </li>
 
                        <li><a class="vlightbox1">
                         <img src="2014-8m.jpg" alt="Image-8"></a>
-                        </li>
+                        <div id="htmlcaption" class="nivo-html-caption"><br>
+                        Title, date. Size. <a href="#">Work on Paper</a></div>
+                        </li>                        
 
                         <li><a>
                         <img src="2014-4m.jpg" alt="Image-4"></a>
+                        <div id="htmlcaption" class="nivo-html-caption"><br>
+                        Title, date. Size. <a href="#">Work on Paper</a></div>
                         </li>
 
                         <li><a>
-                        <img src="2014-16m.jpg" alt="Image 16"></a></li>
+                        <img src="2014-16m.jpg" alt="Image 16"></a>
+                        <div id="htmlcaption" class="nivo-html-caption"><br>
+                        Title, date. Size. <a href="#">Drawing</a></div>
+                        </li>
 
                         <li><a>
-                        <img src="2014-5m.jpg" alt="Image 5"></a></li>                       
-
+                        <img src="2014-5m.jpg" alt="Image 5" title="This is an example of a caption" /></a>                       
+                        <div id="htmlcaption" class="nivo-html-caption"><br>
+                        Title, date. Size. <a href="#">Work on Paper</a></div>
+                        </li>
 
                     </ul>
                 </section><!-- jcarousel --></div><!-- content-wrapper -->
@@ -81,51 +95,8 @@
             </main><!-- jcarousel-wrapper -->
 
 <footer>
-      <div class="navbar navbar-default">
-        <div class="container">
 
-          <div class="navbar-header">
-
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#"></a>
-
-          </div>
-
-
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#"><p>Folio</p></a></li>
-
-
-              <li class="active"><a href="#"><p>Recent Works</p></a></li>
-              <li><a href="#about"><p>Paintings</p></a></li>
-              <li><a href="#contact"><p>Studio</p></a></li>
-              <li><a href="#contact"><p>Works on Paper</p></a></li>
-              <li><a href="#contact"><p>Shaped</p></a></li>
-
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drawings</p><b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Ink on paper 2010</a></li>
-                  <li><a href="#">India Ink on paper 2012</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Earlier Work</li>
-                  <li><a href="#">2000 - 2005</a></li>
-                  <li><a href="#">2005 - 2010</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-
-        </div>
-      </div>
+      <iframe src="footer.html" frameborder="0" width="100%" height="250px"></iframe>
 
 </footer>
 
@@ -138,7 +109,30 @@
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="bootstrap.min.js"></script>
-        <script src="holder.js"></script>
+        <script src="holder.js"></script> 
+
+        <script src="conversion.js"></script>
+
+        <script src="visuallightbox.js"></script>
+        <script src="vlbdata1.js"></script>
+
+
+        <!-- dropdown menu -->
+        <script src="foundation.min.js"></script>
+        <script src="foundation.dropdown.js"></script>
+
+        <script src="nivo-lightbox.js"></script>
+        <script src="nivo-lightbox.min.js"></script>
+
+        <script>
+
+            $(document).ready(function(){
+
+                $('a').nivoLightbox();
+
+            });
+
+        </script>
 
     </body>
 </html>

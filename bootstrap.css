@@ -327,7 +327,7 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus {
@@ -576,11 +576,18 @@ cite {
   text-align: center;
 }
 
+
+
+/*  * * * * * *  page-header  * * * * * * */
+
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 6px;
+  margin: 40px 0 10px;
+  border-bottom: 0px solid #eeeeee;
 }
+
+
+
 
 ul,
 ol {
