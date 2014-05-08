@@ -2286,6 +2286,13 @@ textarea.input-lg {
   outline-offset: -2px;
 }
 
+
+
+/* * * * * * button * * * * * * */
+
+/* * * * * * colors * * * * * * */
+
+
 .btn:hover,
 .btn:focus {
   color: #333333;
