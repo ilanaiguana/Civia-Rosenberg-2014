@@ -584,9 +584,13 @@ cite {
   padding-bottom: 6px;
   margin: 40px 0 10px;
   border-bottom: 0px solid #eeeeee;
+
 }
 
+.page-header h1 {
 
+    color:#1f3c1f;
+}
 
 
 ul,
@@ -3594,7 +3598,7 @@ input[type="button"].btn-block {
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #428bca;
+  background-color: #428bca; /* - blue - */
   outline: 0;
 }
 
@@ -4344,7 +4348,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
 }
 
-/* * * * navbar * * * */
+/* * *  *  navbar  *  * * */
 
 .navbar {
 
@@ -4832,12 +4836,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 /* * * * * * * * * * *  top nav background  * * * * * * * * * * */
 
 .navbar-inverse {
-  background-color: #660000;
-  border-color: #080808;
+  background-color: #49002d;
+  border-color: #ffffff;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #ffffff;
+  color: #080808;
 }
 
 .navbar-inverse .navbar-brand:hover,
