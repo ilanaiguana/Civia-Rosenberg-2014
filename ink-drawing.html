@@ -1,21 +1,40 @@
 <!doctype html>
 <html lang="en">
-    <head>
+
+        <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="ilana-rosenberg">
+       
+        <link rel="shortcut icon" href="favicon.png">
 
         <title>Civia - Ink Drawings</title>
-
+        
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <!-- Example assets -->
         <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
 
-        <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <!-- lightbox-->
+    <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
 
-        <script type="text/javascript" src="jcarousel.responsive.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif] bootstrap -->
+
+
+         <script>
+            $(document).ready(function(){
+              $('li a').nivoLightbox();
+            });
+        </script>
 
     </head>
     <body>
@@ -42,7 +61,7 @@
 
             <main class="jcarousel-wrapper">
                 <section class="jcarousel">
-                    <ul>
+                    <ul class="nivolightbox">
                         <li><a>
                         <img src="inkdrawing-1m.jpg" alt="Image-1"></a>
                         </li>
@@ -171,12 +190,6 @@
         <script src="nivo-lightbox.js"></script>
         <script src="nivo-lightbox.min.js"></script>
 
-
-         <script>
-            $(document).ready(function(){
-              $('a').nivoLightbox();
-            });
-        </script>
 
     </body>
 </html>

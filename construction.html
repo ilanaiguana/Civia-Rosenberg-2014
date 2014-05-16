@@ -9,7 +9,8 @@
     <meta name="author" content="ilana-rosenberg">
     <link rel="shortcut icon" href="favicon.png">
 
-    <title>Civia Rosenberg</title>
+
+    <title>Rosenberg - constructions</title>
 
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -30,6 +31,15 @@
     <![endif] bootstrap -->
 
 
+
+         <script>
+            $(document).ready(function(){
+              $('li a').nivoLightbox();
+            });
+        </script>
+
+
+
     </head>
     <body>
 
@@ -46,7 +56,7 @@
 
       <header>
 
-        <h3>Construction</h3>
+        <h3>Rosenberg - Constructions</h3>
 
       </header>
 
@@ -57,7 +67,8 @@
 
           <div id="content-wrapper">
                 <section class="jcarousel">
-                    <ul>
+
+                    <ul  class="nivoLightbox" >
 
                         <li><a href="construction-1.jpg" title="title of piece">
                         <img src="construction-1m.jpg" alt="Construction" title="title of piece" /></a>
@@ -71,7 +82,7 @@
                         <img src="construction-3m.jpg" alt="Image-93"></a>
                         </li>
 
-                        <li><<a href="construction-4.jpg" title="title of piece">>
+                        <li><a href="construction-4.jpg" title="title of piece">
                         <img src="construction-4m.jpg" alt="Image 4">
                         </a></li>
 
@@ -80,7 +91,7 @@
                         </li>
 
                         <li><a href="construction-6.jpg" title="title of piece">
-                        <img src="construction-6m.jpg" alt="Image-6"></a>
+                        <img src="construction-6.jpg" alt="Image-6"></a>
                         </li>
 
                         <li><a href="construction-7.jpg" title="title of piece">
@@ -94,24 +105,70 @@
                         <img src="construction-9m.jpg" alt="Image-9"></a>
                         </li>
 
-
+                        <li><a href="construction-13.jpg" title="title of piece">
+                        <img src="construction-13m.jpg" alt="Image-9"></a>
+                        </li>
 
                     </ul>
+
+                    
                 </section><!-- jcarousel --></div><!-- content-wrapper -->
 
 
-                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                <a class="jcarousel-control-next"  href="#" >&rsaquo;</a>
 
                 <p class="jcarousel-pagination"></p>
 
             </main><!-- jcarousel-wrapper -->
 
-<footer>
+    <!-- footer -->
 
-    <iframe src="footer.html" frameborder="0" width="100%" height="250px"></iframe>
+      <div class="navbar navbar-default">
+        <div class="container">
+
+         
+
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+              <li><a href="folio.html">Folio</a></li>
+
+              <li><a href="2014.html">Recent Work</a></li>
+
+              <li><a href="paintings.html">Painting</a></li>
+              
+              <li><a href="worksonpaper">Work on Paper</a></li>
+
+              <li class="active"><a href="construction.html">Constructions</a></li>
+
+              <li class="dropdown">
+                <a href="/Drawing/" class="dropdown-toggle" data-toggle="dropdown">
+                  Drawing<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="ink-drawing.html" title="ink drawing 2010">
+
+                  Ink on paper 2010</a></li>
+
+                  <li><a href="#">India Ink on paper 2012</a></li>
+                  <li class="divider"></li>
+
+                  <li class="dropdown-header">Earlier Work</li>
+                  <li><a href="#">2000 - 2005</a></li>
+                  <li><a href="#">2005 - 2010</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div><!--/.nav-collapse -->
 
 
-</footer>
+
+        </div><!-- .container -->
+      </div><!-- .navbar navbar-default  -->
+ 
+
+ <!-- end footer html -->
 
        </div><!-- end #wrap -->
 
@@ -127,19 +184,8 @@
         <script src="conversion.js"></script>
 
 
-                <!-- dropdown menu -->
-        <script src="foundation.min.js"></script>
-        <script src="foundation.dropdown.js"></script>
-
         <script src="nivo-lightbox.js"></script>
         <script src="nivo-lightbox.min.js"></script>
-
-
-         <script>
-            $(document).ready(function(){
-              $('a').nivoLightbox();
-            });
-        </script>
 
 
     </body>

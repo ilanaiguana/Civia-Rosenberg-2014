@@ -9,7 +9,7 @@
     <meta name="author" content="ilana-rosenberg">
     <link rel="shortcut icon" href="favicon.png">
 
-    <title>Civia Rosenberg</title>
+    <title>Rosenberg - recent work</title>
 
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -22,8 +22,6 @@
         <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
 
 
-        <link rel="stylesheet" href="themes/default/default.css" type="text/css" />
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,11 +32,13 @@
     
                 <script>
                     $(document).ready(function(){
-                        $('a').nivoLightbox();
+                        $('li a').nivoLightbox();
                     });
                 </script>
 
     </head>
+    
+
     <body>
 
 
@@ -54,7 +54,7 @@
 
       <header>
 
-        <h3>Recent Work</h3>
+        <h3>Recent Work 2014</h3>
 
       </header>
 
@@ -65,14 +65,14 @@
 
           <div id="content-wrapper">
                 <section class="jcarousel">
-                    <ul>
+                    <ul class="nivoLightbox">
 
                         <li><a href="2014-12-13L.jpg" title="title of piece">
-                        <img src="2014-12-13-long.jpg" alt="Long-Images-12 and 13" title="title of piece" /></a>
+                        <img src="2014-12-13-long.jpg" alt="Long-Images-12 and 13" title="title of piece"/></a>
 
 
-                       <li><a>
-                        <img src="2014-8m.jpg" alt="Image-8"></a>
+                       <li><a href="2014-12-13L.jpg" title="title of piece">
+                        <img src="2014-8m.jpg" alt="Image-8" title="title"/></a>
                         </li>
 
                         <li><a>
@@ -125,12 +125,53 @@
 
             </main><!-- jcarousel-wrapper -->
 
-<footer>
+    <!-- footer -->
 
-    <iframe src="footer.html" frameborder="0" width="100%" height="250px"></iframe>
+      <div class="navbar navbar-default">
+        <div class="container">
+
+         
+
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+              <li><a href="folio.html">Folio</a></li>
+
+              <li class="active"><a href="2014.html">Recent Work</a></li>
+
+              <li><a href="paintings.html">Painting</a></li>
+              
+              <li><a href="worksonpaper">Work on Paper</a></li>
+              <li><a href="construction.html">Constructions</a></li>
+
+              <li class="dropdown">
+                <a href="/Drawing/" class="dropdown-toggle" data-toggle="dropdown">
+                  Drawing<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="ink-drawing.html" title="ink drawing 2010">
+
+                  Ink on paper 2010</a></li>
+
+                  <li><a href="#">India Ink on paper 2012</a></li>
+                  <li class="divider"></li>
+
+                  <li class="dropdown-header">Earlier Work</li>
+                  <li><a href="#">2000 - 2005</a></li>
+                  <li><a href="#">2005 - 2010</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div><!--/.nav-collapse -->
 
 
-</footer>
+
+        </div><!-- .container -->
+      </div><!-- .navbar navbar-default  -->
+ 
+
+ <!-- end footer html -->
 
        </div><!-- end #wrap -->
 
@@ -150,10 +191,7 @@
         <!-- lghtbox -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-
-        <script src="nivo-lightbox.js"></script>
-        <script src="nivo-lightbox.min.js"></script>
-
+ 
 
     </body>
 </html>
