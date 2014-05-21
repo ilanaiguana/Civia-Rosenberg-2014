@@ -27,7 +27,8 @@ h2, h2 a {
 }
 
 h3, h3 a {
-  color: #0388A6;
+
+  color: #999966;
 }
 
 a {
@@ -55,11 +56,6 @@ pre {
 #content-wrapper {
 
   margin:20px;
-
-}
-
-footer li {
-
 
 }
 
