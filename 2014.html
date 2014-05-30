@@ -19,6 +19,7 @@
         <link href="bootstrap.css" rel="stylesheet">
         <!-- lightbox-->
         <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="default.css" type="text/css" />
 
 
 
@@ -31,8 +32,11 @@
     
                 <script>
                     $(document).ready(function(){
-                        $('li a').nivoLightbox();
+                        $('li a').nivoLightbox(
+
+                        );
                     });
+
                 </script>
 
     </head>
@@ -99,72 +103,74 @@
    <!-- - - - - - - end page header - - - - - - - -->
 
 
-            <main class="jcarousel-wrapper">
+        <main class="jcarousel-wrapper">
 
-          <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
 
-          <div id="content-wrapper">
+        <div id="content-wrapper">
                 <section class="jcarousel">
                     <ul class="nivoLightbox">
 
-                        <li><a href="2014-12-13-long.jpg" title="title">
-                        <img src="2014-12-13-long.jpg" alt="Images 12-13" title="title"/></a>
+                        <li><a href="2014-12-13.jpg" title="title" 
+                        data-lightbox-gallery="gallery1">
+                        <img src="2014-12-13m.jpg" alt="Images 12-13" title="title"/></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Crossing Boundaries <br> Collage 50" x 92" </div></li>
 
-                        <li><a href="2014-1.jpg" title="Sun and Ocean">
+                        <li><a href="2014-1.jpg" title="Sun and Ocean"
+                        data-lightbox-gallery="gallery1">
                         <img src="2014-1m.jpg" alt="Sun and Ocean"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Sun and Ocean <br> Collage 41" x 68"</div>
                         </li>
 
                         <li><a href="2014-16.jpg" title="title">
-                        <img src="2014-16.jpg" alt="Image-16"></a> 
+                        <img src="2014-16m.jpg" alt="Image-16"></a> 
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Chaos (Tohu vaVohu)</div></li>   
 
 
-                        <li><a href="2014-8m.jpg" title="title of piece">
-                        <img src="2014-8m.jpg" alt="Image-8" title="title"/></a>
+                        <li><a href="2014-8.jpg" title="No. 1">
+                        <img src="2014-8m.jpg" alt="Image-8" title="No 1"/></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         No. 1 30" x 41"</div></li>               
 
                      
-                        <li><a href="2014-10m.jpg" title="title">
+                        <li><a href="2014-10.jpg" title="No 2">
                         <img src="2014-10m.jpg" alt="Image 10"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         No. 2 30" x 41"</div></li>  
 
-                        <li><a href="2014-9m.jpg" title="title">
+                        <li><a href="2014-9.jpg" title="No 3">
                         <img src="2014-9m.jpg" alt="Image-9"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         No. 3 30" x 41"</div></li>               
 
 
-                        <li><a href="2014-10m.jpg" title="title">
+                        <li><a href="2014-2.jpg" title="title">
                         <img src="2014-2m.jpg" alt="Image-2"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Calligraphy <br>Ink and pigment 41" x 68"</div>
                         </li>
 
-                        <li><a href="2014-10m.jpg" title="title">
+                        <li><a href="2014-3.jpg" title="title">
                         <img src="2014-3m.jpg" alt="Image-3"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Underwater <br>Ink and pigment 41" x 68"</div></li>
 
-                        <li><a href="2014-10m.jpg" title="title">
+                        <li><a href="2014-4.jpg" title="title">
                         <img src="2014-4m.jpg" alt="Image-4"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Minatour <br>Ink and pigment 41" x 68"</div>
                         </li>
 
-                        <li><a href="2014-10m.jpg" title="title">
+                        <li><a href="2014-5.jpg" title="title">
                         <img src="2014-5m.jpg" alt="Image 5"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Filaments<br>Collage</div>
                         </li> 
 
-                        <li><a href="2014-10m.jpg" title="title">
+                        <li><a href="2014-7.jpg" title="title">
                         <img src="2014-7m.jpg" alt="Image-7"></a>
                         <div id="htmlcaption" class="nivo-html-caption"><br>
                         Cocoons 30" x 41" <br>Ink and pastel</div>
@@ -192,34 +198,15 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 
-              <li><a href="folio.html">             Folios</a></li>
+              
+              <li><a href="folio.html">           Folios</a></li>
               <li class="active">
-                <a href="2014.html">                Recent Works</a></li>
-              <li><a href="paintings.html">         Paintings</a></li>
-              <li><a href="construction.html">      Constructions</a></li>
-              <li><a href="drawing.html">           Drawings</a></li>
-
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown">
-                  
-                  Ink Drawings<b class="caret"></b></a>
-
-                <ul class="dropdown-menu">
-                  <li><a href="ink-2013.html" title="ink drawing 2013">
-
-                    Ink 2013</a></li>
-
-                  <li><a href="ink-drawing.html">
-
-                    India Ink 2012</a></li>
-
-                  <li class="divider"></li>
-
-                  <li class="dropdown-header">Earlier Work</li>
-                  <li><a href="#">2010 - 2005</a></li>
-                  <li><a href="#">2005 - 2000</a></li>
-                </ul>
-              </li>
+                  <a href="2014.html">            Recent Works</a></li>
+              <li><a href="paintings.html">       Paintings</a></li>
+              <li><a href="construction.html">    Constructions</a></li>
+              <li><a href="drawing.html">         Drawings</a></li>
+              <li><a href="ink-2013.html">        India Ink 2013</a></li>
+              <li><a href="ink-drawing.html">     Ink Drawings 2012</a></li>
               
             </ul>
           </div><!--/.nav-collapse -->
@@ -233,7 +220,7 @@
  <!-- end footer html -->
 
        </div><!-- end #wrap -->
-
+        
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="jquery.jcarousel.min.js"></script>
 
@@ -245,10 +232,10 @@
 
         <script src="conversion.js"></script>
 
-
+        <script src="nivo-lightbox.min.js"></script>
         
         <!-- lghtbox -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
  
 
