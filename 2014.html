@@ -53,11 +53,10 @@
     <div class="nav navbar-inverse">
         <div class="container">
 
-            <div class="navbar-header">
+          <div class="navbar-collapse collapse">
 
-            <a class="navbar-brand" href="#">Home</a>
-
-            </div>
+            <a class="navbar-brand" href="#">
+              Home</a>
 
 
           <ul class="nav navbar-nav navbar-right">
@@ -77,7 +76,7 @@
           
           </ul><!-- end nav-bar right -->
 
-
+          </div><!-- end navbar-collapse collapse -->
           </div><!-- end container -->
           </div><!-- end nav bar inverse -->
 
@@ -193,8 +192,17 @@
               <li><a href="painting.html">        Paintings </a></li>
               <li><a href="construction.html">    Constructions </a></li>
               <li><a href="drawing.html">         Drawings </a></li>
-              <li><a href="ink-2013.html">        Ink 2013 </a></li>
-              <li><a href="ink-drawing.html">     Ink 2012 </a></li>
+
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" >
+              Ink Drawing <b class="caret"></b></a>    
+
+              <ul class="dropdown-menu">
+                <li><a href="ink-2013.html">        
+                2013 </a></li>
+                <li><a href="ink-drawing.html">     
+                2012 </a></li>
+              </ul></li>
               
             </ul>
           </div><!--/.nav-collapse -->
