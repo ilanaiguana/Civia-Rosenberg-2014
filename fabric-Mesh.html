@@ -1,29 +1,25 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="civia-rosenberg">
+    <meta name="description" content="Civia-Rosenberg">
     <meta name="author" content="ilana-rosenberg">
-
     <link rel="shortcut icon" href="favicon.png">
 
     <title>Civia Rosenberg</title>
 
-
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
-
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
-
+        <!-- jcarousel css -->
+        <link href="jcarousel.responsive.css" rel="stylesheet" type="text/css" >
         <!-- Bootstrap core CSS -->
         <link href="bootstrap.css" rel="stylesheet">
-
         <!-- lightbox-->
-        <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="default.css" type="text/css" />
 
 
 
@@ -33,14 +29,12 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif] bootstrap -->
 
+    
 
-         <script>
-            $(document).ready(function(){
-              $('li a').nivoLightbox();
-            });
-        </script>
 
     </head>
+    
+
     <body>
 
     <!-- Wrap all page content here -->
@@ -61,7 +55,7 @@
             <a class="navbar-brand" href="http://www.CiviaRosenberg.com">
             Home</a>
 
-          <div class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse">          
           <ul class="nav navbar-nav navbar-right">
 
               <li><a href="Maine-studio.html"> 
@@ -101,53 +95,80 @@
             <main class="jcarousel-wrapper">
                 <section class="jcarousel">
                     <ul>
-                        <li><a href="recent-5.jpg" title="Studio-5">
-                        <img src="recent-5m.jpg" alt="recent-5"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Garment 1 <br> 38"x 50"</div></li> 
+                        <li><a href="recent-5.jpg" 
+                        data-title="Garment 1 |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-5m.jpg" alt="Recent-5" title="Garment 1"/></a>
+                        <div> Garment 1  <br> Collage | 38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-6.jpg" title="Studio-6">
-                        <img src="recent-6m.jpg" alt="recent-6"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Garment 2 <br> 38"x 50"</div></li> 
+                        <li><a href="recent-6.jpg" 
+                        data-title="Garment 2 |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-6m.jpg" alt="Recent-6" title="Garment 2"/></a>
+                        <div> Garment 2  <br>  38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-7.jpg" title="Studio-7">
-                        <img src="recent-7m.jpg" alt="recent-7"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Brush Stroke<br>38"x 50"</div></li> 
+                        <li><a href="recent-7.jpg" 
+                        data-title="Brush Stroke |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-7m.jpg" alt="Recent-7" title="Brush Stroke"/></a>
+                        <div> Brush Stroke  <br>  38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-10.jpg" title="Studio-10">
-                        <img src="recent-10m.jpg" alt="recent-10"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Layered Garment<br>38"x 50"</div></li>                      
-                        <li><a href="recent-8.jpg" title="Studio-8">
-                        <img src="recent-8m.jpg" alt="recent-8"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Drawing on Fabric<br>38"x 50"</div></li> 
+                        <li><a href="recent-11.jpg" 
+                        data-title=" Garment |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-11m.jpg" alt="Recent-11" title=" Garment"/></a>
+                        <div>  Garment  <br>  38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-9.jpg" title="Studio-9">
-                        <img src="recent-9m.jpg" alt="recent-9"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Painted Fabric<br>38"x 50"</div></li> 
+                        <li><a href="recent-9.jpg" 
+                        data-title="Painted Fabric |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-9m.jpg" alt="Recent-9" title=" Painting on Fabric "/></a>
+                        <div> Painted Fabric  <br>  38 &#38; x 50 &#34;
+                        </div></li>
+                        <li><a href="recent-558.jpg" 
+                        data-title="Fabric Drawing |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-558m.jpg" alt="Recent-558" title="Fabric Drawing"/></a>
+                        <div> Fabric Drawing <br>  38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-2.jpg" title="Studio wall">
-                        <img src="recent-2m.jpg" alt="recent-2"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Wire and Acetate<br>38"x 50"</div></li>
+                        <li><a href="recent-3.jpg" 
+                        data-title=" To Richard Serra |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-3m.jpg" alt="Recent-3" title=" To Richard Serra "/></a>
+                        <div> To Richard Serra  <br>  38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-3.jpg" title="drawing-3">
-                        <img src="recent-3m.jpg" alt="recent-3"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        To Richard Serra<br>38"x 50"</div></li> 
+                        <li><a href="recent-2.jpg" 
+                        data-title="Painted Fabric |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-2m.jpg" alt="Recent-2" title=" Wire and Acetate "/></a>
+                        <div> Wire and Acetate  <br>  38 &#38; x 50 &#34;
+                        </div></li>
 
-                        <li><a href="recent-4.jpg" title="detail">
-                        <img src="recent-4m.jpg" alt="recent-4"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Wire Mesh Detail</div></li> 
+                        <li><a href="recent-4.jpg" 
+                        data-title="Painted Fabric |  38 &#38; x 50 &#34; "  
+                        data-lightbox="fabric">
+                        <img src="recent-4m.jpg" alt="Recent-4" title=" Wire Mesh Detail "/></a>
+                        <div> Wire Mesh Detail
+                        </div></li>
+
+                        <li><a href="recent-521.jpg" 
+                        data-title=" Wire Mesh Close-up "  
+                        data-lightbox="fabric">
+                        <img src="recent-521m.jpg" alt="Recent-521" title=" Wire Mesh Close-up "/></a>
+                        <div> Wire Mesh Close-up
+                        </div></li>
 
 
                     </ul>
                 </section><!-- jcarousel -->
+
+
 
                 <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
                 <a href="#" class="jcarousel-control-next">&rsaquo;</a>
@@ -155,13 +176,14 @@
                 <p class="jcarousel-pagination"></p>
 
             </main><!-- jcarousel-wrapper -->
-
+                </div><!-- content-wrapper -->
     <!-- footer -->
 
       <div class="navbar navbar-default">
         <div class="container">
 
           <div class="navbar-collapse collapse">
+
              <ul class="nav navbar-nav">
 
               <li class="active">
@@ -208,8 +230,8 @@
         <script src="conversion.js"></script>
 
 
-        <script src="nivo-lightbox.js"></script>
-        <script src="nivo-lightbox.min.js"></script>
+        <!-- lightbox -->
+        <script src="lightbox.min.js"></script>
 
 
     </body>
