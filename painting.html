@@ -1,27 +1,26 @@
 <!doctype html>
 <html lang="en">
+
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="civia-rosenberg">
-        <meta name="author" content="ilana-rosenberg">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Civia-Rosenberg">
+    <meta name="author" content="ilana-rosenberg">
+    <link rel="shortcut icon" href="favicon.png">
 
-        <link rel="shortcut icon" href="favicon.png">
-
-        <title>Civia Rosenberg</title>
+    <title>Civia Rosenberg</title>
 
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jcarousel css -->
+        <link href="jcarousel.responsive.css" rel="stylesheet" type="text/css" >
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap.css" rel="stylesheet">
+        <!-- lightbox-->
+        <link rel="stylesheet" href="lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="default.css" type="text/css" />
 
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.css" rel="stylesheet">
-    <!-- lightbox-->
-    <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,13 +29,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif] bootstrap -->
 
-
-         <script>
-            $(document).ready(function(){
-              $('li a').nivoLightbox();
-            });
-        </script>
-
+    
 
     </head>
 
@@ -52,10 +45,17 @@
     <div class="nav navbar-inverse">
         <div class="container">
 
-          <div class="navbar-collapse collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
             <a class="navbar-brand" href="http://www.civiaRosenberg.com">
             Home </a>
 
+          <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 
               <li><a href="Maine-studio.html"> 
@@ -68,20 +68,20 @@
               Contact </a></li>
                
               <li><a href="#bio.html">
-              Bio </a></li></ul> 
+              Bio </a></li>
 
+          </ul><!-- end nav bar right -->
 
-        </div><!-- end container -->
-          </div><!-- end navbr collapse -->
-            </div><!-- end nav bar inverse -->
+          </div><!-- end navbar-collapse collapse -->
+          </div><!-- end container -->
+          </div><!-- end nav bar inverse -->
 
-
-  <!-- - - - - - - end top-nav - - - - - - -->
 
   <!-- - - - - - - page header - - - - - - -->
 
         <div class="page-header">
-        <a href="index.html"><h1>Civia Rosenberg</h1></a>
+        <a href="index.html">
+        <h1>Civia Rosenberg</h1></a>
         <h3>Paintings</h3>
 
         </div>
@@ -90,44 +90,83 @@
 
 
 
-            <main class="jcarousel-wrapper">
-            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <main class="jcarousel-wrapper">
 
-            <div id="content-wrapper">
-
+        <div id="content-wrapper">
                 <section class="jcarousel">
-                    <ul class="nivoLightbox">
+                    <ul>
 
-                        <li><a href="painting-4.jpg" title="Painting 4">
-                        <img src="painting-4m.jpg" alt="Painting-4"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Birch</div></li> 
+                    <li><a href="painting-4.jpg" 
+                    data-title=" Birch "  
+                    data-lightbox="painting">
+                    <img src="painting-4m.jpg" 
+                    alt="Birch" title="Birch"/></a>
+                    <div> Birch  
+                    </div></li>
 
-                        <li><a href="painting-2.jpg" title="Painting 2 ">
-                        <img src="painting-2m.jpg" alt="Painting-2"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Updraught</div></li> 
+                    <li><a href="painting-2.jpg" 
+                    data-title=" Updraught "  
+                    data-lightbox="painting">
+                    <img src="painting-2m.jpg" 
+                    alt="Updraught" title=" Updraught "/></a>
+                    <div> Updraught  
+                    </div></li>
 
-                        <li><a href="painting-3.jpg" title="Painting 3">
-                        <img src="painting-3m.jpg" alt="Painting-3"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        From the Window 1</div></li> 
+                    <li><a href="painting-3.jpg" 
+                    data-title=" From the Window 1 "  
+                    data-lightbox="painting">
+                    <img src="painting-3m.jpg" 
+                    alt="From the Window 1" title=" From the Window 1 "/></a>
+                    <div> From the Window 1  
+                    </div></li>
 
-                        <li><a href="painting-1.jpg" title="Painting 1 ">
-                        <img src="painting-1m.jpg" alt="Painting-1"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Washing the Buddha</div></li> 
+                    <li><a href="painting-1.jpg" 
+                    data-title=" Washing the Buddha "  
+                    data-lightbox="painting">
+                    <img src="painting-1m.jpg" 
+                    alt="Washing the Buddha" title=" Washing the Buddha "/></a>
+                    <div> Washing the Buddha  
+                    </div></li>
 
-                        <li><a href="painting-5.jpg" title="Painting 5">
-                        <img src="painting-5m.jpg" alt="Painting 5"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                    <li><a href="painting-5.jpg" 
+                    data-title=" Painting-5 "  
+                    data-lightbox="painting">
+                    <img src="painting-5m.jpg" 
+                    alt="painting-5" title=" Painting-5 "/></a>
+                    <div> Painting 5  
+                    </div></li>
+
+                    <li><a href="painting-1231.jpg" 
+                    data-title=" Painting-1231 "  
+                    data-lightbox="painting">
+                    <img src="painting-1231m.jpg" 
+                    alt="Painting-1231" title=" Painting-1231 "/></a>
+                    <div> Painting 1231 
+                    </div></li>
+
+                    <li><a href="painting-1232.jpg" 
+                    data-title=" Painting-1232 "  
+                    data-lightbox="painting">
+                    <img src="painting-1232m.jpg" 
+                    alt="Painting-1232" title=" Painting-1231 "/></a>
+                    <div> Painting 1232 
+                    </div></li>
+
+                    <li><a href="painting-1233.jpg" 
+                    data-title=" Painting-1233 "  
+                    data-lightbox="painting">
+                    <img src="painting-1233m.jpg" 
+                    alt="Painting-1233" title=" Painting-1233 "/></a>
+                    <div> Painting 1233 
+                    </div></li>                    
+
 
                     </ul>
 
                 </section><!-- jcarousel -->
                 </div><!-- content-wrapper -->
 
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
                 <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
                 <p class="jcarousel-pagination"></p>
@@ -136,6 +175,7 @@
 
 
     <!-- footer -->
+
     <footer>
         <div class="navbar navbar-default">
         
@@ -167,31 +207,26 @@
         </div><!-- .container -->
       </div><!-- .navbar navbar-default  -->
  
+ 
+</footer><!-- end footer html -->
 
- <!-- end footer html -->
-</footer>
 
-
-       </div><!-- end .wrapper -->
+       </div><!-- end #wrap -->
 
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="jquery.jcarousel.min.js"></script>
 
         <script type="text/javascript" src="jcarousel.responsive.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="holder.js"></script>
 
         <script src="conversion.js"></script>
 
 
-                <!-- dropdown menu -->
-        <script src="foundation.min.js"></script>
-        <script src="foundation.dropdown.js"></script>
-
-        <script src="nivo-lightbox.js"></script>
-        <script src="nivo-lightbox.min.js"></script>
+        <!-- lightbox -->
+        <script src="lightbox.min.js"></script>
 
 
     </body>
