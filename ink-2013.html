@@ -1,27 +1,26 @@
 <!doctype html>
 <html lang="en">
 
-        <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="ilana-rosenberg">
-       
-        <link rel="shortcut icon" href="favicon.png">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Civia-Rosenberg">
+    <meta name="author" content="ilana-rosenberg">
+    <link rel="shortcut icon" href="favicon.png">
 
-        <title>Civia Rosenberg</title>
-        
+    <title>Civia Rosenberg</title>
+
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
-
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
-
+        <!-- jcarousel css -->
+        <link href="jcarousel.responsive.css" rel="stylesheet" type="text/css" >
         <!-- Bootstrap core CSS -->
         <link href="bootstrap.css" rel="stylesheet">
-    
         <!-- lightbox-->
-        <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="default.css" type="text/css" />
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,14 +29,12 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif] bootstrap -->
 
+    
 
-         <script>
-            $(document).ready(function(){
-              $('li a').nivoLightbox();
-            });
-        </script>
 
     </head>
+    
+
     <body>
 
         <div id="wrap">
@@ -91,61 +88,72 @@
         <h3>India Ink 2013</h3>
 
         </div>    
-    </nav>
 
    <!-- - - - - - - end page header - - - - - - -->
 
 
             <main class="jcarousel-wrapper">
                 <section class="jcarousel">
-                    <ul class="nivolightbox">
-                        <li><a href="ink-23.jpg">
-                        <img src="ink-23m.jpg" alt="inkdrawing-23"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Amazonia No. 1 <br> 
-                        22" x 30" </div></li> 
 
-                        <li><a href="ink-24.jpg">
-                        <img src="ink-24.jpg" alt="inkdrawing-24"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Amazonia No. 2 <br> 
-                         22" x 30" </div></li> 
+                    <ul>
 
-                        <li><a href="ink-25.jpg">
-                        <img src="ink-25m.jpg" alt="Ink-25"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Giant Fern <br> 
-                         22" x 30" </div></li>                       
+                        <li><a href="ink-23.jpg" 
+                        data-title=" Amazonia No. 1  |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-23m.jpg" alt="ink-23" title="Amazonia No. 1 "/></a>
+                        <div> Amazonia No. 1   | 22 &#38; x 30 &#34;
+                        </div></li>
 
-                        <li><a href="ink-26.jpg">
-                        <img src="ink-26m.jpg" alt="Ink-26"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Ginko  <br> 
-                        22" x 30" </div></li> 
+                        <li><a href="ink-24.jpg" 
+                        data-title="Amazonia No. 2 |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-24m.jpg" alt="ink-24" title="Amazonia No. 2 "/></a>
+                        <div> Amazonia No. 2   | 22 &#38; x 30 &#34;
+                        </div></li>
 
-                        <li><a href="ink-27.jpg">
-                        <img src="ink-27m.jpg" alt="Ink-27"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Landscape of the Lake <br> 
-                        22" x 30"</div></li>                
+                        <li><a href="ink-25.jpg" 
+                        data-title=" Giant Fern   |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-25m.jpg" alt="ink-25" title=" Giant Fern  "/></a>
+                        <div> Giant Fern  | 22 &#38; x 30 &#34;
+                        </div></li>
 
-                        <li><a href="ink-28.jpg">
-                        <img src="ink-28m.jpg" alt="Ink-28"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Aboriginal Lines <br> 
-                         22" x 30"</div></li> 
+                        <li><a href="ink-26.jpg" 
+                        data-title=" Ginko |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-26m.jpg" alt="ink-26" title=" Ginko "/></a>
+                        <div> Ginko   | 22 &#38; x 30 &#34;
+                        </div></li>
 
-                        <li><a href="ink-29.jpg">
-                        <img src="ink-29m.jpg" alt="Ink-29"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Wooden Ribs <br> 
-                        22" x 30"</div></li> 
+                        <li><a href="ink-27.jpg" 
+                        data-title=" Landscape of the Lake  |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-27m.jpg" alt="ink-27" title=" Landscape of the Lake"/></a>
+                        <div> Landscape of the Lake  | 22 &#38; x 30 &#34;
+                        </div></li>
 
-                        <li><a href="ink-30.jpg">
-                        <img src="ink-30.jpg" alt="Ink-30"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Wooden Ladders <br>  
-                        22" x 30"</div></li> 
+                        <li><a href="ink-28.jpg" 
+                        data-title=" Aboriginal Lines |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-28m.jpg" alt="ink-28" title=" Aboriginal Lines  "/></a>
+                        <div> Aboriginal Lines | 22 &#38; x 30 &#34;
+                        </div></li>
+
+                        <li><a href="ink-29.jpg" 
+                        data-title=" Wooden Ribs |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-29m.jpg" alt="ink-29" title=" Wooden Ribs "/></a>
+                        <div> Wooden Ribs   | 22 &#38; x 30 &#34;
+                        </div></li>
+
+                        <li><a href="ink-30.jpg" 
+                        data-title=" Wooden Ladders |  22 &#38; x 30 &#34; "  
+                        data-lightbox="ink-2103">
+                        <img src="ink-30m.jpg" alt="ink-30" title=" Wooden Ladders "/></a>
+                        <div> Wooden Ladders  | 22 &#38; x 30 &#34;
+                        </div></li>
+
+
                     </ul>
                 </section><!-- jcarousel -->
 
@@ -155,6 +163,7 @@
                 <p class="jcarousel-pagination"></p>
 
             </main><!-- jcarousel-wrapper -->
+                </div><!-- content-wrapper -->
 
 <footer>
 
@@ -178,8 +187,8 @@
               Ink Drawing <b class="caret"></b></a>    
 
               <ul class="dropdown-menu">
-                <li><a href="ink-2013.html">        Ink 2013 </a></li>
-                <li><a href="ink-drawing.html">     Ink 2012 </a></li>
+                <li><a href="ink-2013.html">       2013 </a></li>
+                <li><a href="ink-drawing.html">    2012 </a></li>
               </ul></li>
               
               
@@ -189,10 +198,10 @@
         </div><!-- .container -->
       </div><!-- .navbar navbar-default  -->
  
-
+ </footer>
  <!-- end footer html -->
 
-</footer>
+
 
        </div><!-- end #wrap -->
 
@@ -208,12 +217,8 @@
         <script src="conversion.js"></script>
 
 
-                <!-- dropdown menu -->
-        <script src="foundation.min.js"></script>
-        <script src="foundation.dropdown.js"></script>
-
-        <script src="nivo-lightbox.js"></script>
-        <script src="nivo-lightbox.min.js"></script>
+        <!-- lightbox -->
+        <script src="lightbox.min.js"></script>
 
 
     </body>
