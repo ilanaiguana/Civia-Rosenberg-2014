@@ -9,19 +9,18 @@
 
         <link rel="shortcut icon" href="favicon.png">
 
-        <title>Civia Rosenberg</title>
+    <title>Civia Rosenberg</title>
 
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- jcarousel css -->
+        <link href="jcarousel.responsive.css" rel="stylesheet" type="text/css" >
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap.css" rel="stylesheet">
+        <!-- lightbox-->
+        <link rel="stylesheet" href="lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="default.css" type="text/css" />
 
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.css" rel="stylesheet">
-    <!-- lightbox-->
-    <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,20 +29,14 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif] bootstrap -->
 
-
-         <script>
-            $(document).ready(function(){
-              $('li a').nivoLightbox();
-            });
-        </script>
+    
 
 
     </head>
 
     <body>
 
-    <!-- Wrap all page content here -->
-    <div id="wrap">
+        <div id="wrap">
    
 
 
@@ -53,14 +46,19 @@
     <div class="nav navbar-inverse">
         <div class="container">
 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+
             <a class="navbar-brand" href="http://www.civiaRosenberg.com">
             Home</a>
 
 
-            <div class="navbar-collapse collapse">
-
-
-
+          <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 
               <li><a href="Maine-studio.html"> 
@@ -73,11 +71,9 @@
               Contact</a></li>
                
               <li><a href="#bio.html">
-              Bio</a></li>
-          
-        </ul><!-- end nav-bar right -->
+              Bio</a></li></ul> 
 
-          </div><!--end .nav-collapse -->
+          </div><!--end .nav-bar collapse -->
         </div><!-- end container -->
       </div><!-- end nav bar inverse -->
 
@@ -96,89 +92,111 @@
 
 
             <main class="jcarousel-wrapper">
-            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-
-            <div id="content-wrapper">
-
                 <section class="jcarousel">
-                    <ul class="nivoLightbox">
 
+                    <ul>
 
-                        <li><a href="drawing-5.jpg" title="Drawing 5">
-                        <img src="drawing-5m.jpg" alt="Drawing 5"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-5.jpg" 
+                        data-title=" Drawing 5 |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-5.jpg" alt="drawing-5" title="Drawing 5"/></a>
+                        <div> Drawing 5  <br>  22 &#34; x 30 &#34;
+                        </div></li>
 
-                        <li><a href="drawing-8.jpg" title="Drawing 8">
-                        <img src="drawing-8m.jpg" alt="Drawing-8"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-8.jpg" 
+                        data-title=" Drawing 8  |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-8m.jpg" alt="drawing-8" title=" Drawing 8 "/></a>
+                        <div>  Drawing 8   <br>  xx &#34; x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-6.jpg" title="Drawing-6">
-                        <img src="drawing-6m.jpg"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-6.jpg" 
+                        data-title=" Drawing 6  |  22 &#34; &#38; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-6m.jpg" alt="drawing-6" title=" Drawing 6 "/></a>
+                        <div>  Drawing 6   <br>  xx &#34;  x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-11.jpg" title="Drawing-11">
-                        <img src="drawing-11m.jpg"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li>
+                        <li><a href="drawing-11.jpg" 
+                        data-title=" Drawing 11  |  22 &#34;  x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-11m.jpg" alt="drawing-11" title=" Drawing 11 "/></a>
+                        <div>  Drawing 11   <br>  xx &#34; x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-3.jpg" title="Drawing 3">
-                        <img src="drawing-3m.jpg" alt="Drawing-3"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-3.jpg" 
+                        data-title=" Drawing 3  |  22 &#34;  x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-3m.jpg" alt="drawing-3" title=" Drawing 3 "/></a>
+                        <div>  Drawing 3   <br>  xx &#34; x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-9.jpg" title="Drawing 9">
-                        <img src="drawing-9m.jpg" alt="Drawing-9"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-9.jpg" 
+                        data-title=" Drawing 9  |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-9m.jpg" alt="drawing-9" title=" Drawing 9 "/></a>
+                        <div>  Drawing 9   <br>  xx &#34;  x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-10.jpg" title="Drawing 10">
-                        <img src="drawing-10m.jpg"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-10.jpg" 
+                        data-title=" Drawing 10  |  22 &#34;  x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-10m.jpg" alt="drawing-10" title=" Drawing 10 "/></a>
+                        <div>  Drawing 10   <br>  xx &#34;  x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-12.jpg" title="Drawing-12">
-                        <img src="drawing-12m.jpg"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-12.jpg" 
+                        data-title=" Drawing 12  |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-12m.jpg" alt="drawing-11" title=" Drawing 12 "/></a>
+                        <div>  Drawing 12   <br>  xx &#34; x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-13.jpg" title="Drawing 13">
-                        <img src="drawing-13m.jpg" alt="Image 13"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title Size.</div></li> 
+                        <li><a href="drawing-13.jpg" 
+                        data-title=" Drawing 13  |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-13m.jpg" alt="drawing-13" title=" Drawing 13 "/></a>
+                        <div>  Drawing 13   <br>  xx &#34; x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-15.jpg" title="Drawing 15 ">
-                        <img src="drawing-15m.jpg" alt="Drawing-15"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-15.jpg" 
+                        data-title=" Drawing 15  |  22 &#34;  x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-15m.jpg" alt="drawing-15" title=" Drawing 15 "/></a>
+                        <div>  Drawing 15   <br>  xx &#34;  x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-16.jpg" title="Drawing 16 ">
-                        <img src="drawing-16m.jpg" alt="drawing-16"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-16.jpg" 
+                        data-title=" Drawing 16  |  22 &#34;  x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-16m.jpg" alt="drawing-16" title=" Drawing 16 "/></a>
+                        <div>  Drawing 16   <br>  xx &#34;  x xx &#34;
+                        </div></li>
 
-                        <li><a href="drawing-14.jpg" title="Drawing 14 ">
-                        <img src="drawing-14m.jpg" alt="drawing-14"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="drawing-14.jpg" 
+                        data-title=" Drawing 14  |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="drawing-14m.jpg" alt="drawing-14" title=" Drawing 14 "/></a>
+                        <div>  Drawing 14  <br>  xx &#34; x xx &#34;
+                        </div></li>
 
-                        <li><a href="2014-11-long.jpg" title="Long Drawing ">
-                        <img src="2014-11-long.jpg" alt="Long Drawing"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        Title, date. Size.</div></li> 
+                        <li><a href="2014-11-long.jpg" 
+                        data-title=" Long Drawing  |  22 &#34; x 30 &#34; "  
+                        data-lightbox="drawing">
+                        <img src="2014-11-longm.jpg" alt="Long Drawing" title=" Long Drawing "/></a>
+                        <div>  Long Drawing <br>  xx &#34; x xx &#34;
+                        </div></li>
  
 
                     </ul>
                 </section><!-- jcarousel -->
-                </div><!-- content-wrapper -->
 
                 <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
                 <p class="jcarousel-pagination"></p>
 
             </main><!-- jcarousel-wrapper -->
+                </div><!-- content-wrapper -->
 
 
     <!-- footer -->
@@ -187,17 +205,6 @@
         
         <div class="container">
 
-          <div class="navbar-header">
-
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-          </div><!-- end .navbar-header -->
 
         <div class="navbar-collapse collapse">
              <ul class="nav navbar-nav">
@@ -226,9 +233,9 @@
         </div><!-- .container -->
       </div><!-- .navbar navbar-default  -->
  
+ 
+</footer><!-- end footer html -->
 
- <!-- end footer html -->
-</footer>
 
 
        </div><!-- end .wrapper -->
@@ -245,11 +252,9 @@
         <script src="conversion.js"></script>
 
 
-                <!-- dropdown menu -->
-        <script src="foundation.min.js"></script>
-        <script src="foundation.dropdown.js"></script>
+                <!-- lightbox -->
+        <script src="lightbox.min.js"></script>
 
-        <script src="nivo-lightbox.js"></script>
 
 
     </body>
