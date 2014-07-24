@@ -12,18 +12,15 @@
 
     <title>Civia Rosenberg</title>
 
-
         <!-- Shared assets -->
         <link rel="stylesheet" type="text/css" href="style.css">
-
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
-
+        <!-- jcarousel css -->
+        <link href="jcarousel.responsive.css" rel="stylesheet" type="text/css" >
         <!-- Bootstrap core CSS -->
         <link href="bootstrap.css" rel="stylesheet">
-
         <!-- lightbox-->
-        <link rel="stylesheet" href="nivo-lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="default.css" type="text/css" />
 
 
 
@@ -33,12 +30,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif] bootstrap -->
 
-
-         <script>
-            $(document).ready(function(){
-              $('li a').nivoLightbox();
-            });
-        </script>
+    
 
     </head>
     <body>
@@ -51,11 +43,18 @@
     <div class="nav navbar-inverse">
         <div class="container">
 
-          <div class="navbar-collapse collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
             <a class="navbar-brand" href="http://www.CiviaRosenberg.com">
             Home</a>
 
-          <ul class="nav navbar-nav navbar-right">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
 
               <li class="active"><a href="Maine-studio.html"> 
               Maine</a></li>
@@ -83,7 +82,7 @@
         <div class="page-header">
         <a href="index.html">
         <h1>Civia Rosenberg</h1></a>
-        <h3>Studio in Maine</h3>
+        <h3>Maine</h3>
 
         </div>    
   
@@ -96,80 +95,127 @@
             <main class="jcarousel-wrapper">
                 <section class="jcarousel">
                     <ul>
-                        <li><a href="mStudio-1.jpg" title="mStudio-1">
-                        <img src="mStudio-1m.jpg" alt="mStudio-1"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
 
-                        <li><a href="mStudio-3.jpg" title="mStudio-3">
-                        <img src="mStudio-3m.jpg" alt="mStudio-3"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
 
-                        <li><a href="mStudio-4.jpg" title="mStudio-4">
-                        <img src="mStudio-4m.jpg" alt="mStudio-4"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-1.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-1m.jpg" 
+                    alt="mStudio-1" title="mStudio-1"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-5.jpg" title="mStudio-5">
-                        <img src="mStudio-5m.jpg" alt="mStudio-5"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-3.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-3m.jpg" 
+                    alt="mStudio-3" title="mStudio-3"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-6.jpg" title="mStudio-6">
-                        <img src="mStudio-6m.jpg" alt="mStudio 6"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-4.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-4m.jpg" 
+                    alt="mStudio-4" title="mStudio-4"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-7.jpg" title="mStudio-7">
-                        <img src="mStudio-7m.jpg" alt="mStudio 7"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-5.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-5m.jpg" 
+                    alt="mStudio-5" title="mStudio-5"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-8.jpg" title="mStudio-8">
-                        <img src="mStudio-8m.jpg" alt="mStudio-8"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-6.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-6m.jpg" 
+                    alt="mStudio-6" title="mStudio-6"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-10.jpg" title="mStudio-10">
-                        <img src="mStudio-10m.jpg" alt="mStudio-10"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-7.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-7m.jpg" 
+                    alt="mStudio-7" title="mStudio-7"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-13.jpg" title="mStudio-13">
-                        <img src="mStudio-13m.jpg" alt="mStudio-13"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
-                        
-                        <li><a href="mStudio-14.jpg" title="mStudio-14">
-                        <img src="mStudio-14m.jpg" alt="mStudio-14 "></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="mStudio-8.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-8m.jpg" 
+                    alt="mStudio-8" title="mStudio-8"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="quilt-2m.jpg" title="quilt-2">
-                        <img src="quilt-2m.jpg" alt="My Mother's Quilt 2"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        My Mother's Quilt</div></li> 
+                    <li><a href="mStudio-10.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-10m.jpg" 
+                    alt="mStudio-10" title="mStudio-10"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="quilt-1.jpg" title="quilt-1">
-                        <img src="quilt-1m.jpg" alt="My Mother's Quilt 1"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        My Mother's Quilt</div></li>
+                    <li><a href="mStudio-13.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-13m.jpg" 
+                    alt="mStudio-13" title="mStudio-13"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-16.jpg" title="mStudio-16">
-                        <img src="mStudio-16m.jpg" alt="mStudio-16"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li>   
+                    <li><a href="mStudio-14.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-14m.jpg" 
+                    alt="mStudio-14" title="mStudio-14"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-17.jpg" title="mStudio-17">
-                        <img src="mStudio-17m.jpg" alt="mStudio-17"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        </div></li> 
+                    <li><a href="quilt-2m.jpg" 
+                    data-title=" My Mother's Quilt "  
+                    data-lightbox="maine">
+                    <img src="quilt-2m.jpg" 
+                    alt="quilt-2" title="quilt-2"/></a>
+                    <div>    
+                    </div></li>
 
-                        <li><a href="mStudio-9.jpg" title="mStudio-9">
-                        <img src="mStudio-9m.jpg" alt="mStudio-9"></a>
-                        <div id="htmlcaption" class="nivo-html-caption"><br>
-                        View from the window</div></li> 
+                    <li><a href="quilt-1m.jpg" 
+                    data-title=" My Mother's Quilt "  
+                    data-lightbox="maine">
+                    <img src="quilt-1m.jpg" 
+                    alt="quilt-1" title="quilt-1"/></a>
+                    <div>    
+                    </div></li>
+
+                    <li><a href="mStudio-16.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-16m.jpg" 
+                    alt="mStudio-16" title="mStudio-16"/></a>
+                    <div>    
+                    </div></li>
+
+                    <li><a href="mStudio-17.jpg" 
+                    data-title=" Maine "  
+                    data-lightbox="maine">
+                    <img src="mStudio-17m.jpg" 
+                    alt="mStudio-17" title="mStudio-17"/></a>
+                    <div>     
+                    </div></li>
+
+                    <li><a href="mStudio-9.jpg" 
+                    data-title=" View from the window "  
+                    data-lightbox="maine">
+                    <img src="mStudio-9m.jpg" 
+                    alt="mStudio-9" title="mStudio-9"/></a>
+                    <div>  
+                    </div></li>
 
 
                     </ul>
@@ -235,8 +281,8 @@
         <script src="conversion.js"></script>
 
 
-        <script src="nivo-lightbox.js"></script>
-        <script src="nivo-lightbox.min.js"></script>
+                <!-- lightbox -->
+        <script src="lightbox.min.js"></script>
 
 
     </body>
