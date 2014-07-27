@@ -8,7 +8,7 @@
 
                 if (width >= 600) {
                     width = width / 4;
-                } else if (width >= 350) {
+                } else if (width >= 400) {
                     width = width / 1;
                 }
 
