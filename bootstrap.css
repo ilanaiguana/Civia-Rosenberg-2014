@@ -6370,6 +6370,8 @@ button.close {
   content: " ";
 }
 
+/** *  *  *  *  carousel  *  *  *  *  **/
+
 .carousel {
   position: relative;
 }
@@ -6378,6 +6380,7 @@ button.close {
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 
 .carousel-inner > .item {
@@ -6530,7 +6533,7 @@ button.close {
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   border-radius: 10px;
 }
 
@@ -6538,7 +6541,7 @@ button.close {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .carousel-caption {
