@@ -39,6 +39,11 @@ a {
 
 /** start style **/
 
+#wrap {
+
+  max-width: 1200px; 
+  margin: auto;    
+}
 
 
 footer {
